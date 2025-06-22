@@ -28,7 +28,7 @@ const BuscarOrden = () => {
         setOrdenes([]);
       }
     }, 300),
-    [] // Dependencias vacías ya que no necesitamos centroSeleccionado
+    [] // Dependencias vacías ya que no se necesita centroSeleccionado
   );
 
   // Limpiar debounce al desmontar
