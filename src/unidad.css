@@ -1,0 +1,95 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-position: center;
+ 
+}
+
+/* Contenedor principal */
+.unidad-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding: 20px;
+}
+
+/* Contenedor grande */
+.unidad-container form {
+  width: 100%;
+  max-width: 300px; /* Ancho máximo */
+  background: rgb(241, 241, 245);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 2px;
+}
+
+/* Grupo de formulario */
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: center; /* Centra el contenido interno */
+}
+
+/* Etiqueta */
+.form-group label {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* input(digita) */
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center; /* Centra el texto dentro del input */
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #603f9c;
+  box-shadow: 0 0 0 2px rgba(96, 63, 156, 0.2);
+}
+
+/*  Botón */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7f5ac2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #4d337d;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+  color: #e74c3c;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.input-error {
+  border-color: #e74c3c;
+}
